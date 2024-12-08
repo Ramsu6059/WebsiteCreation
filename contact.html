@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+        background-image: url('vector abstract-Photoroom.png'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        background-position: center; 
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+    }
+
+    header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 20px;
+    cursor: pointer;
+    color:white;
+    font-weight: bold;
+    position: relative;
+}
+nav li a{
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s;
+}
+nav li a:hover{
+    color:#ff7200;
+}
+nav li a::after{
+    content: "";
+    position: absolute;
+    left:30px;
+    bottom: 1px; 
+    width: 0;
+    height: 2px; 
+    background: #ff7200; 
+    transition: width 0.3s ease-in-out;
+
+}
+nav li a:hover::after{
+    width: 70%;
+}
+nav ul li img{
+    width:25px;
+    margin-right: 8px;
+}
+nav ul li img:hover{
+    color: #ff7200;
+}
+span{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FF7103;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 40px;
+
+}
+.searchbox{
+    background-color: transparent; 
+    height: 31px;  
+    border: 2px solid #FF7103;  
+    border-right: 2px solid #ff7f00;  
+    font-family: arial;  
+    border-right: none; 
+    border-bottom-left-radius: 5px; 
+    border-top-left-radius: 5px;  
+    color: white;
+    text-indent: 10px;
+    
+}
+.searchbox:hover,.searchbox:focus{
+    outline:none;
+}
+.searchbox::placeholder{
+    color:white;
+}
+.searchbtn{
+    margin-right: 45px;
+    height: 38px;
+    font-size: 12px;
+    margin-left: -5px;
+    padding: 9px 10px ;  
+    color: white;  
+    border: none; 
+    background: #ff7200;  
+    cursor: pointer; 
+    border-radius: 0 5px 5px 0; 
+    border: 2px solid #ff7200;
+}
+.searchbtn:hover,.searchbtn:focus{
+    background-color: #eb8231;
+    border: 2px solid #e28231;
+}
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #ff7200;
+    }
+
+    .contact-section {
+      max-width: 800px;
+      margin: 50px auto;
+      background: rgb(0, 0, 0);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1{
+      text-align: center;
+      color:#ff7200;
+      text-shadow:2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .contact-section h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ff7200;
+    }
+
+    .contact-section p {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .inputbox-group {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .inputbox-group label {
+        position: absolute;
+        top: 50%; /* Center the label vertically */
+        left: 15px;
+        transform: translateY(-50%);
+        font-size: 14px;
+        background-color: transparent;
+        color: white;
+        pointer-events: none; /* Prevent label from blocking input interaction */
+        transition: 0.3s ease all;
+        padding: 0 5px;
+    }
+
+    .inputbox-group input,
+    .inputbox-group textarea {
+        width: 95%;
+        height: 35px; 
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #ff7200;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        color: white;
+        margin: 0;
+        text-indent: 5px;
+    }
+
+    textarea.inputbox {
+        height: 100px; /* Set specific height for textarea */
+    }
+
+    .inputbox-group input:focus ~ label,
+    .inputbox-group input:valid ~ label,
+    .inputbox-group textarea:focus ~ label,
+    .inputbox-group textarea:valid ~ label {
+        top: 0px; /* Move label to the top of the input */
+        font-size: 12px;
+        background-color: #000; /* Add background for better visibility */
+        color: #ff7200;
+        padding: 0 5px;
+        border-radius: 3px;
+    }
+
+    .contact-form button {
+        width: 20%;
+        margin-top: 30px; 
+        padding: 7px 15px;  
+        color: white;  
+        border: none; 
+        cursor: pointer;  
+        border-radius: 5px;  
+        background: #ff7200;  
+        border: 2px solid #ff7200;
+    }
+
+    .contact-form button:hover {
+        background-color: #eb8231;
+        border: 2px solid #e28231;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span>Info</span>
+    <nav>
+        <ul>
+            <li><img src="https://img.icons8.com/?size=100&id=U5JRqX4RSgfj&format=png&color=FFFFFF" alt="Home Icon" class="icon"> <a href="index.html">HOME</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=44471&format=png&color=FFFFFF" alt="Service Icon" class="icon"> <a href="Course.html">COURSES</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=NQgaDa0zkFsF&format=png&color=FFFFFF" alt="Design Icon" class="icon"> <a href="Design.html">DESIGN</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=1eCbkp60SQm7&format=png&color=FFFFFF" alt="Contact Icon" class="icon"> <a href="contact.html">CONTACT</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=83180&format=png&color=FFFFFF" alt="About Icon" class="icon"> <a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <input type="text" class="searchbox" placeholder="Type to Search">
+        <button class="searchbtn">Search</button>
+    </div>
+</header>
+  <h1>Contact Us</h1>
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>Have questions or want to work with us? Fill out the form below, and we’ll get back to you soon!</p>
+    <form class="contact-form">
+      <div class="inputbox-group">
+        <input type="text" class="inputbox" id="name" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="inputbox-group">
+        <input type="email" class="inputbox" id="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="inputbox-group">
+        <textarea id="message" class="inputbox" required></textarea>
+        <label for="message">Message</label>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>

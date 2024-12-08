@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('vector abstract-Photoroom.png'); /* Dark background */
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 20px;
+    
+            }
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav ul li{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin-right: 20px;
+            cursor: pointer;
+            color:white;
+            font-weight: bold;
+            position: relative;
+        }
+        nav li a{
+            text-decoration: none;
+            color:white;
+            transition: color 0.3s;
+        }
+        nav li a:hover{
+            color:#ff7200;
+        }
+        nav li a::after{
+            content: "";
+            position: absolute;
+            left:30px;
+            bottom: 1px; 
+            width: 0;
+            height: 2px; 
+            background: #ff7200; 
+            transition: width 0.3s ease-in-out;
+
+        }
+        nav li a:hover::after{
+            width: 70%;
+        }
+        nav ul li img{
+            width:25px;
+            margin-right: 8px;
+        }
+        nav ul li img:hover{
+            color: #ff7200;
+        }
+        span{
+            font-size: 50px;
+            font-weight: bold;
+            color: #FF7103;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin-left: 40px;
+
+        }
+        .searchbox{
+            background-color: transparent; 
+            height: 26px;  
+            border: 2px solid #FF7103;  
+            border-right: 2px solid #ff7f00;  
+            font-family: arial;  
+            border-right: none; 
+            border-bottom-left-radius: 5px; 
+            border-top-left-radius: 5px;  
+            color: white;
+            text-indent: 10px;
+            
+        }
+        .searchbox:hover,.searchbox:focus{
+            outline:none;
+        }
+        .searchbox::placeholder{
+            color:white;
+        }
+        .searchbtn{
+            margin-right: 45px;
+            height: 33px;
+            font-size: 12px;
+            margin-left: -5px;
+            padding: 8px 8px ;  
+            color: white;  
+            border: none; 
+            background: #ff7200;  
+            cursor: pointer; 
+            border-radius: 0 5px 5px 0; 
+            border: 2px solid #ff7200;
+        }
+        .searchbtn:hover,.searchbtn:focus{
+            background-color: #eb8231;
+            border: 2px solid #e28231;
+        }
+                .signupform {
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                form {
+                    width:35%;
+                    height:100vh;  
+                    border: 1px solid black;
+                    border-radius: 9px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    background-color: black;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                }
+
+                h3 {
+                    color: #ff7200;
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+
+                .formloginwithlogos img {
+                    width: 40px;
+                }
+
+                .inputbox-group {
+                    width: 70%;
+                    position: relative;
+                    color: white;
+                    margin-bottom: 20px;
+                }
+
+                .inputbox-group label {
+                    position: absolute;
+                    transform: translateY(-50%);
+                    top: 50%;
+                    left: 15px;
+                    font-size: 12px;
+                    padding: 0px 5px;
+                    pointer-events: none;
+                    transition: .5s ease all;
+                    color: white;
+                }
+
+                .inputbox-group input:focus~label, 
+                .inputbox-group input:valid~label {
+                    top: 0;
+                    background-color: #000000;
+                    font-size: 10px;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                .inputbox {
+                    width: 100%;
+                    height: 40px;
+                    background-color: transparent;
+                    outline: none;
+                    border: 2px solid #ff7200;
+                    border-radius: 5px;
+                    text-indent: 10px;
+                    color: white;
+                }
+
+                .inputbox::placeholder {
+                    color: white;
+                }
+
+                .inputsignupbtn {
+                    padding: 7px 15px;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    background: #ff7200;
+                    border: 2px solid #ff7200;
+                }
+
+                .inputsignupbtn:hover {
+                    background-color: #eb8231;
+                    border: 2px solid #e28231;
+                }
+
+                form p a {
+                    text-decoration: none;
+                    color: #ff7200;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <span>Info</span>
+        <nav>
+            <ul>
+                <li><img src="https://img.icons8.com/?size=100&id=U5JRqX4RSgfj&format=png&color=FFFFFF" alt="Home Icon" class="icon"> <a href="index.html">HOME</a></li>
+                <li><img src="https://img.icons8.com/?size=100&id=44471&format=png&color=FFFFFF" alt="Service Icon" class="icon"> <a href="Course.html">COURSES</a></li>
+                <li><img src="https://img.icons8.com/?size=100&id=NQgaDa0zkFsF&format=png&color=FFFFFF" alt="Design Icon" class="icon"> <a href="Design.html">DESIGN</a></li>
+                <li><img src="https://img.icons8.com/?size=100&id=1eCbkp60SQm7&format=png&color=FFFFFF" alt="Contact Icon" class="icon"> <a href="contact.html">CONTACT</a></li>
+                <li><img src="https://img.icons8.com/?size=100&id=83180&format=png&color=FFFFFF" alt="About Icon" class="icon"> <a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" class="searchbox" placeholder="Type to Search">
+            <button class="searchbtn">Search</button>
+        </div>
+    </header>
+    <div class="signupform">
+        <form>
+            <h3>Sign Up Here</h3>
+            <div class="inputbox-group">
+                <input class="inputbox" type="text" required>
+                <label>Enter Name Here</label>
+            </div>
+            <div class="inputbox-group">
+                <input class="inputbox" type="email" required>
+                <label>Enter Email Here</label>
+            </div>
+            <div class="inputbox-group">
+                <input class="inputbox" type="password" required>
+                <label>Create Password</label>
+            </div>
+            <div class="inputbox-group">
+                <input class="inputbox" type="password" required>
+                <label>Confirm Password</label>
+            </div>
+            <input class="inputsignupbtn" type="button" value="Sign Up" onclick="redirectToPage('signup-success.html')">
+            <p class="formpara">Already have an account?<br>
+                <a href="index.html">Login</a> here
+            </p>
+            <p>Sign up with</p>
+            <figure class="formloginwithlogos">
+                <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=FFFFFF" alt="facebook" class="loginwithlogo">
+                <img src="https://img.icons8.com/?size=100&id=32320&format=png&color=FFFFFF" alt="insta" class="loginwithlogo">
+                <img src="https://img.icons8.com/?size=100&id=8824&format=png&color=FFFFFF" alt="twitter" class="loginwithlogo">
+                <img src="https://img.icons8.com/?size=100&id=17950&format=png&color=FFFFFF" alt="google" class="loginwithlogo">
+                <img src="https://img.icons8.com/?size=100&id=11102&format=png&color=FFFFFF" alt="skype" class="loginwithlogo">
+            </figure>
+        </form>
+    </div>
+</body>
+</html>

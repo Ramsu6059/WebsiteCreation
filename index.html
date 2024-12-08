@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Website Loginpage</title>
+ <link rel="stylesheet" href="websitestyle.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <span>Info</span>
+    <nav>
+        <ul>
+            <li><img src="https://img.icons8.com/?size=100&id=U5JRqX4RSgfj&format=png&color=FFFFFF" alt="Home Icon" class="icon"> <a href="#">HOME</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=44471&format=png&color=FFFFFF" alt="Service Icon" class="icon"> <a href="Course.html">Courses</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=NQgaDa0zkFsF&format=png&color=FFFFFF" alt="Design Icon" class="icon"> <a href="Design.html">DESIGN</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=1eCbkp60SQm7&format=png&color=FFFFFF" alt="Contact Icon" class="icon"> <a href="contact.html">CONTACT</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=83180&format=png&color=FFFFFF" alt="About Icon" class="icon"> <a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <input type="text" class="searchbox" placeholder="Type to Search">
+        <button class="searchbtn">Search</button>
+    </div>
+</header>
+<div class="section">
+    <div class="detials">
+        <h1 class="webd">Web Design &</h1>
+        <h1 class="dev">Development</h1>
+        <h1 class="cou">Course</h1>
+        <p class="detialspara">Web Design is a specialization of the design stream. They also use HTML,<br> 
+        CSS, WYSIWYG editing software, markup validators, etc.,<br> 
+        to create design elements.</p>
+        <button class="joinbtn" onclick="redirectToPage('signup.html')">Join us</button>
+    </div>
+    <div class="loginform">
+        <form>
+            <h3>Login Here</h3>
+            <div class="inputbox-group">
+                <input class="inputbox" type="text" required>
+                <label>Enter Email Here</label>
+            </div>
+            <div class="inputbox-group">
+                <input class="inputbox" type="password" required>
+                <label>Enter Password Here</label>
+            </div>
+            <input class="inputloginbtn" type="button" value="Login" onclick="redirectToPage('login.html')">
+            <p class="formpara">Don't have an account?<br>
+                <a href="signup.html">Sign up</a> here
+            </p>
+            <p>Login with</p>
+            <figure class="formloginwithlogos">
+                <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=FFFFFF" alt="facebook" class="loginwithlogo">
+                <img src="https://img.icons8.com/?size=100&id=32320&format=png&color=FFFFFF" alt="insta" class="loginwithlogo">
+                <img src="https://img.icons8.com/?size=100&id=8824&format=png&color=FFFFFF" alt="twitter" class="loginwithlogo">
+                <img src="https://img.icons8.com/?size=100&id=17950&format=png&color=FFFFFF" alt="google" class="loginwithlogo">
+                <img src="https://img.icons8.com/?size=100&id=11102&format=png&color=FFFFFF" alt="skype" class="loginwithlogo">
+            </figure>
+        </form>
+    </div>
+</div>
+
+<section class="combo-courses">
+	<h2>Recommended Combo Courses</h2>
+	<div class="courses-container">
+		<div class="course-card">
+			<div class="course-header">
+				<img src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/combo_logos/javascript.webp" alt="JavaScript">
+				<h3>HTML + CSS + JS</h3>
+			</div>
+			<p>⭐ 5.0 (1965)</p>
+			<ul>
+				<li><strong>Skill Level:</strong> Beginner</li>
+				<li><strong>Hours:</strong> 30</li>
+				<li><strong>Learners:</strong> 2360</li>
+			</ul>
+		</div>
+		<div class="plus">+</div>
+		<div class="course-card">
+			<div class="course-header">
+				<img src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/combo_logos/angular.webp" alt="Angular">
+				<h3>Angular & React</h3>
+			</div>
+			<p>⭐ 5.0 (1865)</p>
+			<ul>
+				<li><strong>Skill Level:</strong> Beginner</li>
+				<li><strong>Hours:</strong> 30</li>
+				<li><strong>Learners:</strong> 1989</li>
+			</ul>
+		</div>
+		<div class="plus">+</div>
+		<div class="course-card">
+			<div class="course-header">
+				<img src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/combo_logos/python.webp" alt="Python">
+				<h3>Python + Java + SQL</h3>
+			</div>
+			<p>⭐ 5.0 (1970)</p>
+			<ul>
+				<li><strong>Skill Level:</strong> Beginner</li>
+				<li><strong>Hours:</strong> 30</li>
+				<li><strong>Learners:</strong> 2051</li>
+			</ul>
+		</div>
+	</div>
+	<div class="cta">
+		<h3>Enroll Now at 30,000/- Only.</h3>
+		<button onclick="redirectToPage()">Enroll Now</button>
+	</div>
+</section>
+
+<div class="container">
+    <h1 class="title">Program Highlights</h1>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing/highlights/convenient-learning-format.webp" alt="Learning Format">
+        <div class="card-content">
+          <div class="icon">📚</div>
+          <h3 class="card-title">Convenient Learning Format</h3>
+          <p class="card-description">Online learning format with mentorship from industry experts.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing/highlights/dedicated-career-services.webp" alt="Career Services">
+        <div class="card-content">
+          <div class="icon">💼</div>
+          <h3 class="card-title">Dedicated Career Services</h3>
+          <p class="card-description">Resume & interview preps with exclusive job boards.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing/highlights/learn-from-the-best.webp" alt="Learn from Best">
+        <div class="card-content">
+          <div class="icon">🏆</div>
+          <h3 class="card-title">Learn from the Best</h3>
+          <p class="card-description">Award-winning faculty from top IT backgrounds.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing/highlights/structured-program-with-dedicated-support.webp" alt="Dedicated Support">
+        <div class="card-content">
+          <div class="icon">🤝</div>
+          <h3 class="card-title">Dedicated Program Support</h3>
+          <p class="card-description">Program manager to ensure learning progress.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing/highlights/hands-on-learning.webp" alt="Hands-On Learning">
+        <div class="card-content">
+          <div class="icon">🛠</div>
+          <h3 class="card-title">Hands-On Learning</h3>
+          <p class="card-description">Become job-ready with real world projects.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="dedicated support.jpg" alt="Hands-On Learning">
+        <div class="card-content">
+          <div class="icon">📈</div>
+          <h3 class="card-title">structured program with dedicated support</h3>
+          <p class="card-description">Dedicated program manager to ensure that students make progress and have learning outcomes.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="guidance-section">
+    <h2>You Always Get the Best Guidance</h2>
+    <div class="guidance-line"></div>
+    <div class="stats-container">
+        <div class="stat">
+            <div class="circle">
+                <p class="number">140K</p>
+                <p class="text">Students Enrolled</p>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="circle">
+                <p class="number">20+</p>
+                <p class="text">Overall Branches</p>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="circle">
+                <p class="number">4000+</p>
+                <p class="text">Placed Students</p>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="circle">
+                <p class="number">13+</p>
+                <p class="text">Years Of Experience</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="extra-content">
+    <h2>Learn More About Web Development</h2>
+    <p>Web development is the work involved in developing a website for the Internet or an intranet. It ranges from creating simple static pages to complex web-based applications.</p>
+    <p>Technologies include HTML, CSS, JavaScript, and back-end technologies like PHP, Python, and databases.</p>
+</div>
+
+<div class="fullstack">
+  <dl>
+    <dt><h3>What is Full Stack?</h3></dt>
+    <dd>Full stack is one of the ways of developing websites and software’s completely, both front end and back end. Thus, with Full Stack Developer Training in Chennai you get an in-depth understanding of programming with different languages and how to give structure to an application or website along with the presentation. Full Stack Developer Training Institute in Chennai also includes database layer for creating and manipulating as well as generating queries.</dd>
+  </dl>
+  <dl>
+    <dt><h3>Why is Full Stack?</h3></dt>
+    <dd>Full Stack mainly focuses on having proficiency in both front end and back end web development. Thus, Full Stack is used by developers to make websites and applications. Through programming, Full Stack developers can work on a complete or rather a full stack of components required to build a website or an application.</dd>
+  </dl>
+  <div class="objective">
+    <h3>What are the objectives of Full Stack Training?</h3>
+    <ul>
+     <li>Understanding the basics of web development, Javascript, Databases, and more.</li> 
+     <li>Working with databases i.e. creating as well as manipulating it.</li> 
+     <li>Learning your way with system infrastructure, and knowing what is required for the software or website you are developing, including the OS.</li> 
+     <li>Front end coding with HTML, JavaScript, CSS etc.</li>
+     <li>Back end coding with Java, Oracle etc.</li>
+     <li>Providing project support from the beginning till the end as you develop your own software or website.</li>
+     <li>Ensuring job oriented training in our Full Stack Developer Certification training.</li>
+    </ul>
+    <h3>What are the Prerequisites to learn Full Stack Training?</h3>
+    <p>Full Stack Developer skills required are Front-end technology, Development Languages, Database, Basic design ability, Server, Working with API and version control systems. A Java full stack developer can build whole Java applications including front end, back-end, database, APIs, server and version control.18-Dec-2021</p>
+  </div>
+</div>
+
+<footer>
+  <div class="callquery">
+    <h1>Still have queries? Contact Us</h1>
+    <p>Request a callback. An expert from the admission office will call you in the next 24 working hours.<br>
+      You can also reach out to us at cs@info.in or 9813847653</p>
+    <div class="contactus">
+      <button class="callback" onclick="location.href='willgetcall.html';">Request Callback</button>
+      <button class="callus" onclick="location.href='willgetcall.html';">Call Us</button>
+    </div>
+  </div>
+    <p>&copy; 2024 Info Website. All Rights Reserved.</p>
+    <nav>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="termandcondition.html">Terms of Service</a> | 
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</footer>
+
+<script>
+    function redirectToPage(page) {
+        window.location.href = "signup.html";
+    }
+</script>
+</body>
+</html>
